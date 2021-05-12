@@ -485,7 +485,7 @@ input:focus, textarea:focus {
 	color: #66ccff;
 }
 .call_area {
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 }
 .call_area a {
 	color: #66ccff;
@@ -1342,11 +1342,16 @@ input:focus, textarea:focus {
 }
 
 .single_product{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     text-align: center;
     overflow: hidden;
-	margin-bottom: 30px;	
+	margin-bottom: 30px;
 	border: 1px solid rgba(0,0,0,0.02);
 	padding-bottom: 20px;
+    /*padding-left: 900px;*/
 	background: #fff;
 	transition: .5s;
 }
@@ -1378,7 +1383,7 @@ input:focus, textarea:focus {
     transition: all 0.6s ease 0s;
 	overflow: hidden;
 	opacity: 0;
-	background: rgba(51, 210, 134, .9);
+	background: #26b7ff;
 	
 }
 .single_product:hover .box-content{
