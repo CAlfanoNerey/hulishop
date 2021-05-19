@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+{% load crispy_forms_tags%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}\
+ <section  class="section_padding">
+    <div class="container">
+        <h3 style="text-align: center">Need a unique shirt made?</h3>
+        <p style="text-align: center">contact us for one of a kind sublimation</p>
+
+        <form method = "POST" >
+            {% csrf_token %}
+            {{form|crispy}}
+            <button class="btn btn-primary" type="submit" name = "button">Submit</button>
+        </form>
+
+    </div>
+ </section>
+{% endblock %}
+</body>
+</html>
